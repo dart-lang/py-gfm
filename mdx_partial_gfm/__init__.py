@@ -40,3 +40,4 @@ class PartialGithubFlavoredMarkdownExtension(Extension):
             ('css_class', 'highlight')
         ]).extendMarkdown(md, md_globals)
         gfm.SemiSaneListExtension().extendMarkdown(md, md_globals)
+        gfm.StrikethroughExtension().extendMarkdown(md, md_globals)

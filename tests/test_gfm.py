@@ -95,3 +95,10 @@ class TestGfm(TestCase):
         """, """
         foo@bar.com
         """, ['gfm'])
+
+    def test_strikethrough(self):
+        self.assert_renders("""
+        <p>This is <del>struck</del>.</p>
+        """, """
+        This is ~~struck~~.
+        """, ['gfm'])
