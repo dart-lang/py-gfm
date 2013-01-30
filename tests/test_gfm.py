@@ -102,3 +102,10 @@ class TestGfm(TestCase):
         """, """
         This is ~~struck~~.
         """, ['gfm'])
+
+    def test_spaced_link(self):
+        self.assert_renders("""
+        <p><a href="href">text</a></p>
+        """, """
+        [text] (href)
+        """, ['gfm'])
