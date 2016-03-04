@@ -3,10 +3,10 @@
 # for details. All rights reserved. Use of this source code is governed by a
 # BSD-style license that can be found in the LICENSE file.
 
+from __future__ import unicode_literals
 import optparse
 import os
 import sys
-import subprocess
 
 from unittest import TextTestRunner
 
@@ -32,7 +32,7 @@ parser.add_option('-n', '--name', help='the name of the test to run',
 options, args = parser.parse_args()
 sdk_path = None
 if len(args) > 0:
-    print 'Error: 0 arguments expected.'
+    print('Error: 0 arguments expected.')
     parser.print_help()
     sys.exit(1)
 
@@ -40,4 +40,3 @@ test_path = os.path.join(os.path.dirname(__file__), 'tests')
 test_loader = loader.TestLoader()
 if options.name: test_loader.testMethodPrefix = options.name
 TextTestRunner(verbosity = 2).run(test_loader.discover(test_path))
-

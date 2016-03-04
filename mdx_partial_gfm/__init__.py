@@ -42,3 +42,4 @@ class PartialGithubFlavoredMarkdownExtension(Extension):
         gfm.SemiSaneListExtension().extendMarkdown(md, md_globals)
         gfm.SpacedLinkExtension().extendMarkdown(md, md_globals)
         gfm.StrikethroughExtension().extendMarkdown(md, md_globals)
+        gfm.TaskListExtension().extendMarkdown(md, md_globals)

@@ -8,6 +8,7 @@ from gfm import hidden_hilite
 from gfm import semi_sane_lists
 from gfm import spaced_link
 from gfm import strikethrough
+from gfm import tasklist
 
 AutolinkExtension = autolink.AutolinkExtension
 AutomailExtension = automail.AutomailExtension
@@ -15,3 +16,4 @@ HiddenHiliteExtension = hidden_hilite.HiddenHiliteExtension
 SemiSaneListExtension = semi_sane_lists.SemiSaneListExtension
 SpacedLinkExtension = spaced_link.SpacedLinkExtension
 StrikethroughExtension = strikethrough.StrikethroughExtension
+TaskListExtension = tasklist.TaskListExtension
